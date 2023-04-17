@@ -60,8 +60,8 @@ nav li:first-child {
 
 .hero-image {
 	position: absolute;
-	top: 0%;
-	left: 50%;
+	/*top: 0%;*/
+	/*left: 0%;*/
 	display: block; 
 	margin: auto;
 	/*width: 100%;*/
