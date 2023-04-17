@@ -69,7 +69,7 @@ nav li:first-child {
 	z-index: 0;
 }
 
-.hero-image span {	
+.hero-image h1 {	
 	position: absolute;
 	top: 50%;
 	left: 50%;
