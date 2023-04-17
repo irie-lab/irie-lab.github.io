@@ -33,8 +33,10 @@ header {
 }
 
 .logo {
-	font-size: 24px;
-	font-weight: bold;
+	display: inline-block;
+	margin: 0 30px;
+	vertical-align: top;
+	width: 30%;
 }
 
 nav ul {
