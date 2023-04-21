@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Basic authentication. Edit homepage?"
-AuthUserFile /userpath/.htpasswd
+AuthUserFile ./userpath/.htpasswd
 require valid-user
