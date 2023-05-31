@@ -1,12 +1,9 @@
-/* Reset CSS */
-/* */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/* Global Styles */
 body {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
@@ -15,11 +12,13 @@ body {
 	background-color: #1f1f1f;
 }
 
+/* タブ */
 a {
 	color: #fff;
 	text-decoration: none;
 }
 
+/* タブのグループ */
 ul {
 	list-style: none;
 }
@@ -33,6 +32,7 @@ header {
 	padding: 0 20px;
 }
 
+/* class logo */
 .logo {
 	display: inline-block;
 	margin: 0 30px;
@@ -53,6 +53,7 @@ nav li:first-child {
 	margin-left: 0;
 }
 
+/* ホーム画面 irie_lab_front.jpg */
 #hero {
 	/*height: 600px;*/
 	/*position: relative;*/
@@ -100,6 +101,7 @@ nav li:first-child {
   margin: 0 auto;
 }
 
+/* 研究内容 */
 #about {
 	padding: 80px 0;
 	text-align: center;
@@ -111,6 +113,7 @@ nav li:first-child {
 	margin-bottom: 40px;
 }
 
+/* 特徴 */
 #features {
 	padding: 80px 0;
 	text-align: center;
@@ -142,31 +145,32 @@ nav li:first-child {
 	margin-bottom: 20px;
 }
 
-#news {
+/* アクセス */
+#access {
 	padding: 80px 0;
 	text-align: center;
 }
 
-#news h2 {
+#access h2 {
 	font-size: 36px;
 	font-weight: bold;
 	margin-bottom: 40px;
 }
 
-.news-item {
+.access-item {
 	display: inline-block;
 	margin: 0 30px;
 	vertical-align: top;
 	width: 30%;
 }
 
-.news-item h3 {
+.access-item h3 {
 	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
 
-.news-item p {
+.access-item p {
 	font-size: 16px;
 }
 
