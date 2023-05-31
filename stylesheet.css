@@ -94,6 +94,12 @@ nav li:first-child {
 	margin-bottom: 20px;
 }*/
 
+/* ページ全体 */
+#page {
+  width: 800px;
+  margin: 0 auto;
+}
+
 #about {
 	padding: 80px 0;
 	text-align: center;
