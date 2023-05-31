@@ -12,6 +12,12 @@ body {
 	background-color: #1f1f1f;
 }
 
+/* ページ全体 */
+#page {
+  /*width: 800px; */
+  /*margin: 0 auto; */
+}
+
 /* タブ */
 a {
 	color: #fff;
@@ -95,11 +101,7 @@ nav li:first-child {
 	margin-bottom: 20px;
 }*/
 
-/* ページ全体 */
-#page {
-  width: 800px;
-  margin: 0 auto;
-}
+
 
 /* 研究内容 */
 #about {
