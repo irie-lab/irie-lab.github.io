@@ -204,7 +204,7 @@ nav li:first-child {
 }
 .news-list .item .category span{
   background: #999;
-  color: #FFF;
+  color: #1f1f1f; /* 黒 */;
   text-align: center;
   display: inline-block;
   padding: 5px 15px;
