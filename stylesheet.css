@@ -183,12 +183,12 @@ nav li:first-child {
   flex-wrap: wrap;
   flex-wrap: nowrap;
   text-decoration: none;
-  color: #333;
-  border-bottom: 1px solid #CCC;
+  color: #333; /* 黒 */
+  border-bottom: 1px solid #333; /* 黒 */
   padding: 10px 10px;
 }
 .news-list .item:first-child a{
-  border-top: 1px solid #CCC;
+  border-top: 1px solid #333; /* 黒 */
 }
 .news-list .item .date{
   margin: 0;
@@ -214,10 +214,10 @@ nav li:first-child {
 .news-list .item .title{
   margin: 0;
   width: 100%;
-  color: #AAAAAA;
+  color: #AAAAAA; /* グレー */
 }
 .news-list .item a:hover .title{
-  color: #EEEEEE;
+  color: #EEEEEE;  /* 薄いグレー */
 }
 
 @media screen and (max-width: 767px){
