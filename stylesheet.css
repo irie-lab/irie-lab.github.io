@@ -203,8 +203,8 @@ nav li:first-child {
   padding: 0 15px 0 0;
 }
 .news-list .item .category span{
-  background: #999;
-  color: #1f1f1f; /* 黒 */;
+  background: #333333;  /* 黒 */;
+  color: #fff; /* 白 */;
   text-align: center;
   display: inline-block;
   padding: 5px 15px;
@@ -217,7 +217,7 @@ nav li:first-child {
   color: #AAAAAA; /* グレー */
 }
 .news-list .item a:hover .title{
-  color: #EEEEEE;  /* 薄いグレー */
+  color:  #1f1f1f; /* 黒 */;
 }
 
 @media screen and (max-width: 767px){
