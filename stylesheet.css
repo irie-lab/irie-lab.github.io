@@ -41,7 +41,8 @@ header {
 	display: inline-block;
 	margin: 0 30px;
 	vertical-align: top;
-	width: 20%;
+	width: 30%;
+	height: 50%;
 }
 
 nav ul {
