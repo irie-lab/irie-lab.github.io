@@ -41,14 +41,13 @@ header {
 	margin: 0 30px;
 	vertical-align: top;
 	width: 30%;
-	height: 50%;
+	height: 10%;
 }
 
 /* タブ (HOME, NEWS, ...) */
 nav ul {
 	display: flex;
 	align-items: center;
-	top: 10%;
 }
 
 nav li {
