@@ -36,7 +36,7 @@ header {
 	margin:10px ;
 }
 
-/* class logo */
+/* logo */
 .logo {
 	display: inline-block;
 	margin: 0 30px;
@@ -57,7 +57,7 @@ nav li:first-child {
 	margin-left: 0;
 }
 
-/* ホーム画面 irie_lab_front.jpg */
+/* ホーム画像 irie_lab_front.jpg */
 #hero {
 	/*height: 600px;*/
 	/*position: relative;*/
@@ -179,6 +179,11 @@ nav li:first-child {
   list-style: none outside;
   margin: 10px;
   padding: 0px;
+}
+.news-list h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 40px;
 }
 .news-list .item a{
   display: flex;
