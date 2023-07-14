@@ -1,9 +1,10 @@
 * {
-	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-weight: bold;
 }
+
+
 
 body {
 	font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
@@ -11,7 +12,8 @@ body {
 	line-height: 1.5;
 	color: #1f1f1f; /* 黒 */
 	background-color: #fff; /* 白 */
-	margin:10px ;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 a {
@@ -20,7 +22,6 @@ a {
 	font-weight: bold;
 }
 
-/* タブのグループ */
 ul {
 	list-style: none;
 }
@@ -31,26 +32,29 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 10px;
-	margin:10px ;
+	padding: 4px;
+	margin:4px ;
 }
 
 /* logo */
 .logo {
 	display: inline-block;
-	margin: 0 30px;
+	margin-right: 0%;
+	padding: 0px;
 	vertical-align: top;
-	width: 30%;
 }
 
 /* タブ (HOME, NEWS, ...) */
 nav ul {
 	display: flex;
 	align-items: center;
+	margin-left: 1%;
+	padding: 10px;
 }
 
 nav li {
-	margin-left: 20px;
+	margin-left: 1%;
+	padding: 10px;
 }
 
 nav li:first-child {
@@ -84,20 +88,6 @@ nav li:first-child {
 	font-size: 48px;
 	font-weight: bold;
 }	
-/*.hero-description {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	/*transform: translate(-50%, -50%);*/
-	text-align: center;
-	z-index: 1;
-}
-
-.hero-description h1 {
-	font-size: 48px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}*/
 
 
 
@@ -108,7 +98,7 @@ nav li:first-child {
 }
 
 #about h2 {
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: bold;
 	margin-bottom: 40px;
 }
@@ -120,7 +110,7 @@ nav li:first-child {
 }
 
 #features h2 {
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: bold;
 	margin-bottom: 40px;
 }
@@ -181,9 +171,10 @@ nav li:first-child {
   padding: 0px;
 }
 .news-list h2 {
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: bold;
 	margin-bottom: 40px;
+	text-align: center;
 }
 .news-list .item a{
   display: flex;
