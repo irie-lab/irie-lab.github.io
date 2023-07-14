@@ -5,6 +5,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	<!-- java -->
+	<script>
+	        const scrollBlue = function () {
+	            const blueLeft = document.getElementById("blue").getBoundingClientRect().left;
+	            const blueTop = document.getElementById("blue").getBoundingClientRect().top;
+	            window.scrollTo({
+	                left: blueLeft,
+	                top: blueTop,
+	                behavior: 'smooth'
+	            });
+	        };
+    	</script>
+	
 </head>
 <body>
 <div id="page">
@@ -16,8 +30,8 @@
 		<nav>
 			<ul>
 				<li><a href="./index.html">HOME</a></li>
-				<li><a href="./index.html">NEWS</a></li>
-				<li><a href="./index.html">RESEARCH</a></li>
+				<li><a href="#news-id">NEWS</a></li>
+				<li><a href="#about">RESEARCH</a></li>
 				<li><a href="./member.html">MEMBER</a></li>
 				<li><a href="./event.html">EVENTS</a></li>
 				<li><a href="./contact.html">CONTACTS</a></li>
@@ -35,29 +49,31 @@
 		</div>
 	</section>
 
-	<section class="news-list">
-    <li class="item">
-        <a href="./event.html">
-            <p class="date">2020/4/15</p>
-            <p class="category"><span>お知らせ</span></p>
-	    <p class="title">ここにお知らせが入りますここにお知らせが入りますここにお知らせが入ります</p>
-        </a>
-    </li>
-    <li class="item">
-        <a href="#">
-            <p class="date">2020/4/15</p>
-            <p class="category"><span>お知らせ</span></p>
-            <p class="title">ここにお知らせが入りますここにお知らせが入りますここにお知らせが入ります</p>
-        </a>
-    </li>
-    <li class="item">
-        <a href="#">
-            <p class="date">2020/4/15</p>
-            <p class="category"><span>お知らせ</span></p>
-            <p class="title">ここにお知らせが入りますここにお知らせが入りますここにお知らせが入ります</p>
-        </a>
-    </li>
-</section>
+	<!-- 新着情報 -->	
+	<section class="news-list" id="news-id">
+    		<li class="item">
+        		<a href="./event.html">
+            			<p class="date">2020/4/15</p>
+            			<p class="category"><span>お知らせ</span></p>
+	    			<p class="title">ここにお知らせが入りますここにお知らせが入りますここにお知らせが入ります</p>
+        		</a>
+	    	</li>
+	    	<li class="item">
+		        <a href="./event.html">
+		            	<p class="date">2020/4/15</p>
+		            	<p class="category"><span>お知らせ</span></p>
+		            	<p class="title">ここにお知らせが入りますここにお知らせが入りますここにお知らせが入ります</p>
+		        </a>
+	    	</li>
+		<li class="item">
+		        <a href="./event.html">
+		            	<p class="date">2020/4/15</p>
+		            	<p class="category"><span>お知らせ</span></p>
+		            	<p class="title">ここにお知らせが入りますここにお知らせが入りますここにお知らせが入ります</p>
+		        </a>
+	    	</li>
+	</section>
+
 	
 	<section id="about">
 		<h2>研究内容</h2>
