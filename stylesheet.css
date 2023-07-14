@@ -19,6 +19,7 @@ a {
 	color: #1f1f1f; /* 黒 */
 	text-decoration: none;
 	font-weight: bold;
+	top: 50%;
 }
 
 /* タブのグループ */
