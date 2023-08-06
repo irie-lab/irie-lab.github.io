@@ -22,6 +22,10 @@ a {
 	font-weight: bold;
 }
 
+a:hover {
+	color: #a19f9f;
+}
+
 ul {
 	list-style: none;
 }
@@ -42,6 +46,7 @@ header {
 	margin-right: 0%;
 	padding: 0px;
 	vertical-align: top;
+	padding-top: 20px;
 }
 
 /* タブ (HOME, NEWS, ...) */
@@ -50,11 +55,13 @@ nav ul {
 	align-items: center;
 	margin-left: 1%;
 	padding: 10px;
+	padding-top: 30px;
 }
 
 nav li {
 	margin-left: 1%;
 	padding: 10px;
+	padding-top: 30px;
 }
 
 nav li:first-child {
@@ -63,13 +70,12 @@ nav li:first-child {
 
 /* ホーム画像 irie_lab_front.jpg */
 #hero {
-	/*height: 600px;*/
-	/*position: relative;*/
+	padding-top: 40px;
 }
 
 .hero-image {
 	position: relative;
-	padding: 40px;
+	padding: 20px;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -81,43 +87,47 @@ nav li:first-child {
 .hero-image h1 {	
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 25%;
 	transform: translate(-50%, -50%);
-	text-align: center;
+	text-align: left;
 	z-index: 1;
-	font-size: 48px;
+	font-size: 45px;
 	font-weight: bold;
+	color: #fff;
 }	
+.hero-image h2 {	
+	position: absolute;
+	top: 85%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	text-align: left;
+	z-index: 1;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+}	
+.slider{
+	object-fit: cover;
+}
+
 
 
 
 /* 研究内容 */
-#about {
-	padding: 80px 0;
-	text-align: center;
-}
-
-#about h2 {
-	font-size: 30px;
-	font-weight: bold;
-	margin-bottom: 40px;
-}
-
-/* 特徴 */
 #features {
 	padding: 80px 0;
 	text-align: center;
 }
 
 #features h2 {
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: bold;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 .feature {
 	display: inline-block;
-	margin: 0 30px;
+	margin: 0 10px;
 	vertical-align: top;
 	width: 30%;
 }
@@ -126,7 +136,7 @@ nav li:first-child {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
 .feature h3 {
@@ -135,34 +145,7 @@ nav li:first-child {
 	margin-bottom: 20px;
 }
 
-/* アクセス */
-#access {
-	padding: 80px 0;
-	text-align: center;
-}
 
-#access h2 {
-	font-size: 36px;
-	font-weight: bold;
-	margin-bottom: 40px;
-}
-
-.access-item {
-	display: inline-block;
-	margin: 0 30px;
-	vertical-align: top;
-	width: 30%;
-}
-
-.access-item h3 {
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.access-item p {
-	font-size: 16px;
-}
 
 /* ニュース */
 .news-list{
@@ -171,9 +154,10 @@ nav li:first-child {
   padding: 0px;
 }
 .news-list h2 {
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: bold;
-	margin-bottom: 40px;
+	margin-top: 80px;
+	margin-bottom: 20px;
 	text-align: center;
 }
 .news-list .item a{
@@ -228,4 +212,96 @@ nav li:first-child {
 .news-list .item .title{
   margin-top: 10px;
 }
+}
+
+
+/* アクセス */
+#access {
+	padding: 80px 0;
+	text-align: center;
+}
+
+#access h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#access p {
+	font-weight: lighter;
+	font-size: 15px;
+}
+
+iframe {
+	width: 70%;
+	aspect-ratio: 16/9;
+	margin: 10px;
+  }
+
+  
+
+/* フッター */
+
+hr {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #8c8c9e;
+  }
+
+.footer {
+	padding: 2rem;
+	font-size: 15px;
+	color: #bbc6d7;
+	background: rgb(95, 96, 99);
+	text-align: center;
+}
+
+
+  
+.flex {
+	display: flex;
+}
+  
+
+  
+.footer__navi {
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
+}
+  
+.footer__navi li {
+	display: inline-block;
+}
+  
+.footer__navi li:not(:last-child) {
+	margin-right: 16px;
+}
+  
+.footer__logo {
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+  
+
+
+
+  
+@media (min-width: 768px) {
+	.md-flex {
+	  display: flex;
+	}
+  
+	.md-justify-between {
+	  justify-content: space-between;
+	}
+  
+	.copyright {
+	  text-align: center;
+	  font-weight: lighter;
+	}
+}
+
+
+/* メンバー */
+#member {
+	padding: 40px 0;
 }

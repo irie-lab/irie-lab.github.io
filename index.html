@@ -6,32 +6,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-	<!-- java -->
-	<script>
-	        const scrollBlue = function () {
-	            const blueLeft = document.getElementById("blue").getBoundingClientRect().left;
-	            const blueTop = document.getElementById("blue").getBoundingClientRect().top;
-	            window.scrollTo({
-	                left: blueLeft,
-	                top: blueTop,
-	                behavior: 'smooth'
-	            });
-	        };
-    	</script>
+    <!-- 画像自動スクロール -->	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 10000,
+            });
+        });
+    </script>
+
+
 	
 </head>
 <body>
 <div id="page">
 	<header>
 		<div class="logo">
-			<img src="images/logo2.jpg" alt="特徴画像" style="width:60%;">
+			<img src="images/logo2.jpg" alt="特徴画像" style="width:80%;">
 		</div>
+        
 		
 		<nav>
 			<ul>
 				<li><a href="./index.html">HOME</a></li>
 				<li><a href="#news-id">NEWS</a></li>
-				<li><a href="#about">RESEARCH</a></li>
+				<li><a href="#features">RESEARCH</a></li>
 				<li><a href="./member.html">MEMBER</a></li>
 				<li><a href="./event.html">EVENTS</a></li>
 				<li><a href="./contact.html">CONTACTS　</a></li>
@@ -40,89 +44,106 @@
 	</header>
 
 	<section id="hero">
-		<div class="hero-image">
-			<img src="images/lab-image.jpg" alt="イメージ" style="width:70%; display: block; margin: auto;">
-			<!-- div class="hero-description"> -->	
-			<!-- <h1 style="width: 250px; display: block; margin: auto;">入江研究室</h1> -->	
-			<!-- <p>研究室の説明文</p> -->
-			<!-- </div> -->			
-		</div>
+        <div class="slider">
+            <img src="images/lab-image.jpg" width="500" height="350">
+            <img src="images/home2.jpg" width="500" height="350">
+            <img src="images/pic1.jpg" width="500" height="350">
+        </div>
 	</section>
 
 	<!-- 新着情報 -->	
 	<section class="news-list" id="news-id">
-		<h2>IMFORMATION</h2>
+		<h2>Imformation</h2>
     		<li class="item">
         		<a href="./event.html">
             			<p class="date">2020/4/15</p>
             			<p class="category"><span>NEWS</span></p>
-	    			<p class="title">ここにお知らせが入りますここにお知らせが入りますここにお知らせが入ります</p>
+	    			<p class="title">画像の認識・理解シンポジウム（MIRU2023）で発表しました。</p>
         		</a>
 	    	</li>
 	    	<li class="item">
 		        <a href="./event.html">
 		            	<p class="date">2020/4/15</p>
 		            	<p class="category"><span>NEWS</span></p>
-		            	<p class="title">ここにお知らせが入りますここにお知らせが入りますここにお知らせが入ります</p>
+		            	<p class="title">画像センシングシンポジウム（SSII2023）で発表しました。</p>
 		        </a>
 	    	</li>
 		<li class="item">
 		        <a href="./event.html">
 		            	<p class="date">2020/4/15</p>
 		            	<p class="category"><span>NEWS</span></p>
-		            	<p class="title">ここにお知らせが入りますここにお知らせが入りますここにお知らせが入ります</p>
+		            	<p class="title">オープンキャンパスに展示しました。</p>
 		        </a>
 	    	</li>
 	</section>
 
-	<!-- 研究内容 -->
-	<section id="about">
-		<h2>RESEARCH</h2>
-		<p>Perception</p>
-		<p>Learning</p>
-		<p>Recognition</p>
-	</section>
-	
-	<div class="img-frame">
-   		<div class="img-01"></div>
-   		<div class="img-02"></div>
-   		<div class="img-03"></div>
-	</div>
 
+    <!-- 研究内容 -->
 	<section id="features">
-		<h2>特徴</h2>
+		<h2>Research Interests</h2>
 		<div class="feature">
-			<img src="https://dummyimage.com/400x300/000/fff" alt="特徴画像">
-			<h3>特徴1</h3>
-			<p>特徴1の説明文</p>
+			<img src="images/p2.jpg" alt="特徴画像" style="width:32%;">
+			<h3>Perception</h3>
+			<p>人間は物事を視聴覚等を通して何が起きているか思考します．
+				例えば音響・音声からどんな道具を使って何をしているのか，
+				どんな姿勢をしているのか想像することができます．
+				さて，同様の機能を人工知能に持たせることはできないだろうか．
+				機械自身が身の回りの情報を知覚できる研究を進めています．</p>
 		</div>
 		<div class="feature">
-			<img src="https://dummyimage.com/400x300/000/fff" alt="特徴画像">
-			<h3>特徴2</h3>
-			<p>特徴2の説明文</p>
+			<img src="images/l.jpg" alt="特徴画像" style="width:32%;">
+			<h3>Learning</h3>
+			<p>人間は物事を視聴覚等を通して何が起きているか思考します．
+				例えば音響・音声からどんな道具を使って何をしているのか，
+				どんな姿勢をしているのか想像することができます．
+				さて，同様の機能を人工知能に持たせることはできないだろうか．
+				機械自身が身の回りの情報を知覚できる研究を進めています．</p>
 		</div>
 		<div class="feature">
-			<img src="https://dummyimage.com/400x300/000/fff" alt="特徴画像">
-			<h3>特徴3</h3>
-			<p>特徴3の説明文</p>
+			<img src="images/r2.jpg" alt="特徴画像" style="width:38%;">
+			<h3>Recognition</h3>
+			<p>人間は物事を視聴覚等を通して何が起きているか思考します．
+				例えば音響・音声からどんな道具を使って何をしているのか，
+				どんな姿勢をしているのか想像することができます．
+				さて，同様の機能を人工知能に持たせることはできないだろうか．
+				機械自身が身の回りの情報を知覚できる研究を進めています．</p>
 		</div>
 	</section>
 
 	<section id="access">
-		<h2>アクセス</h2>
-		<div class="access-item">
-			<h3>お知らせ1</h3>
-			<p>お知らせ1の説明文</p>
-		</div>
-		<div class="access-item">
-			<h3>お知らせ2</h3>
-			<p>お知らせ2の説明文</p>
-		</div>
-		<div class="access-item">
-			<h3>お知らせ3</h3>
-			<p>お知らせ3の説明文</p>
-		</div>
+		<h2>Access</h2>
+        
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.1462372494157!2d139.86124221526126!3d35.77178398017339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018857ad443098d%3A0xf79b3de52fef127b!2z5p2x5Lqs55CG56eR5aSn5a2mIOiRm-mjvuOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1689319300360!5m2!1sja!2sjp"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <p>〒125-8585 東京都葛飾区新宿 6-3-1 東京理科大学 管理棟4階工学部情報工学科 入江研究室</p>
 	</section>
+
+
+    <footer class="footer">
+        <div class="md-flex md-justify-between">
+          <a href="https://jajaaan.co.jp/" class="footer__logo">
+            <img src="images/rikadai.jpg" width="100%" alt="Lo" />
+          </a>
+          <ul class="footer__navi flex">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#news-id">NEWS</a></li>
+            <li><a href="#features">RESEARCH</a></li>
+            <li><a href="./member.html">MEMBER</a></li>
+            <li><a href="./event.html">EVENTS</a></li>
+            <li><a href="./contact.html">CONTACTS　</a></li>
+          </ul>
+        </div>
+        <hr />
+        <p class="copyright">
+            Copyright © 2023 Irie Lab. All Rights Reserved.
+        </p>
+      </footer>
 	
 </div>
 </body>
