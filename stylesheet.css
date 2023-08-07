@@ -114,17 +114,37 @@ nav li:first-child {
 
 
 /* 研究内容 */
-#features {
+#research {
 	padding: 80px 0;
 	text-align: center;
 }
 
-#features h2 {
-	font-size: 40px;
+/* 研究内容:スローガン */
+#research h2 {
+	font-size: 35px;
 	font-weight: bold;
-	margin-bottom: 60px;
+	margin: 5px;
+	margin-top: 80px;
+	margin-bottom: 50px;
 }
 
+#research h1 {
+	font-size: 40px;
+	font-weight: bold;
+	margin: 5px;
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+
+#research h4 {
+	font-size: 20px;
+	margin: 50px;
+	margin-bottom: 160px;
+}
+
+
+
+/* P,R,Lのイメージ画像 */
 .feature {
 	display: inline-block;
 	margin: 0 10px;
@@ -244,14 +264,14 @@ iframe {
 hr {
 	height: 1px;
 	border: 0;
-	border-top: 1px solid #8c8c9e;
+	border-top: 1px solid #948f8f;
   }
 
 .footer {
 	padding: 2rem;
 	font-size: 15px;
 	color: #bbc6d7;
-	background: rgb(95, 96, 99);
+	background: rgb(255, 255, 255);
 	text-align: center;
 }
 
@@ -305,3 +325,16 @@ hr {
 #member {
 	padding: 40px 0;
 }
+
+/* ホーム画面=>動かない背景 */
+.parallax {
+	box-sizing: border-box;
+  	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	background-image: url('images/lab-image.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
